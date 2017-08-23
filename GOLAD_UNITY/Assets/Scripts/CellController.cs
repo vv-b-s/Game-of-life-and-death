@@ -5,7 +5,7 @@ using Random = UnityEngine.Random;
 
 public class CellController : MonoBehaviour
 {
-    public int GridHeight, GridWidth;
+    public int GridWidth, GridHeight;
     private static GameObject[,] CellGrid;
     public GameObject LivingCell;
     public GameObject DeadCell;
@@ -18,9 +18,9 @@ public class CellController : MonoBehaviour
     /// <param name="grid"></param>
     public void GenerateCells()
     {
-        CellGrid = new GameObject[GridHeight, GridWidth];
-        for (int i = 0; i < GridHeight; i++)
-            for (int j = 0; j < GridWidth; j++)
+        CellGrid = new GameObject[GridWidth, GridHeight];
+        for (int i = 0; i < GridWidth; i++)
+            for (int j = 0; j < GridHeight; j++)
                 CellGrid[i, j] = Random.Range(0,2) == 1 ? LivingCell : DeadCell;
             
     }

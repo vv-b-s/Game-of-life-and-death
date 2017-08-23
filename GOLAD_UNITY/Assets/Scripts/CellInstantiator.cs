@@ -6,21 +6,21 @@ using UnityEngine;
 public class CellInstantiator : MonoBehaviour {
 
     public CellController Life;
-    private float time;
+    private DateTime time;
 	void Start ()
     {
         Life = GetComponent<CellController>();      // Instantiate Cell Controller
 
         Life.GenerateCells();
         Life.DrawCells();
-        time = Time.time;
+        time = DateTime.Now;
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        var newTime = Time.time;
-        if(newTime!=time)
+        var newTime = DateTime.Now;
+        if(newTime.Second!=time.Second)
         {
             time = newTime;
             Life.UpdateGrid();
