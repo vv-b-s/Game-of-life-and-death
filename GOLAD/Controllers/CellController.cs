@@ -12,13 +12,14 @@ namespace GOLAD.Controllers
         private string previousDrawing;
         private static Cell[,] CellGrid; 
         Random CellRandomizer = new Random();
-        private Cell LivingCell = new Cell("*", true);
+        private Cell LivingCell;
         private Cell DeadCell = new Cell(" ", false);
 
         public bool GameIsNotOver { set; get; }
 
-        public CellController()
+        public CellController(string shape)
         {
+            LivingCell = new Cell(shape, true);
             GameIsNotOver = true;
         }
 
