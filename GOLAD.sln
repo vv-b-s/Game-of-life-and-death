@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOLAD", "GOLAD\GOLAD.csproj", "{BF48FAFA-F4D8-450C-8749-9E0EC0C8C4D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOLAD_UNITY", "GOLAD_UNITY\GOLAD_UNITY.csproj", "{F166F2BC-2729-9FCB-70F3-478C4D520D73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BF48FAFA-F4D8-450C-8749-9E0EC0C8C4D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF48FAFA-F4D8-450C-8749-9E0EC0C8C4D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF48FAFA-F4D8-450C-8749-9E0EC0C8C4D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F166F2BC-2729-9FCB-70F3-478C4D520D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F166F2BC-2729-9FCB-70F3-478C4D520D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F166F2BC-2729-9FCB-70F3-478C4D520D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F166F2BC-2729-9FCB-70F3-478C4D520D73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
